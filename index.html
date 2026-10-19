@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc mừng 20/10 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Trái tim bay nền -->
+  <div class="hearts" id="hearts"></div>
+
+  <!-- CẢNH 1: Màn hình mở đầu -->
+  <section class="scene active" id="scene-start">
+    <div class="start-card">
+      <div class="gift">🎁</div>
+      <h1>Có một điều bất ngờ<br>dành cho bạn…</h1>
+      <button class="btn" id="btn-start">Mở quà 💗</button>
+    </div>
+  </section>
+
+  <!-- CẢNH 2: Ảnh crush -->
+  <section class="scene" id="scene-photo">
+    <h2 class="title" id="title-hello"></h2>
+    <div class="polaroid" id="polaroid">
+      <img id="crush-photo" src="image/gn.jpg.jpg" alt="Ảnh của bạn">
+      <p class="caption" id="photo-caption"></p>
+      <span class="sparkle s1">✨</span>
+      <span class="sparkle s2">✨</span>
+      <span class="sparkle s3">💖</span>
+    </div>
+    <button class="btn hidden" id="btn-next">Có một bức thư cho bạn 💌</button>
+  </section>
+
+  <!-- CẢNH 3: Bức thư -->
+  <section class="scene" id="scene-letter">
+    <div class="envelope-wrap" id="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="flap"></div>
+        <div class="paper"></div>
+        <div class="pocket"></div>
+        <div class="seal">💗</div>
+      </div>
+      <p class="hint" id="hint">Chạm vào phong thư để mở</p>
+    </div>
+
+    <div class="letter-card" id="letter-card">
+      <div class="letter-text" id="letter-text"></div>
+      <div class="signature hidden" id="signature"></div>
+    </div>
+  </section>
+
+  <!-- Nút bật/tắt nhạc -->
+  <button class="music-toggle hidden" id="music-toggle" title="Bật/tắt nhạc">🎵</button>
+  <audio id="bg-music" src="music/YTSave.to_YouTube_Media_WH6yGshxb_w_JustaTee-Phương-Ly-Thằng-Điên-Lyrics-Video_009_vbr.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
